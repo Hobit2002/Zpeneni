@@ -5,6 +5,16 @@
 \usepackage{graphicx}
 \usepackage{wallpaper}
 \usepackage{afterpage}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=orange,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 
 \newcommand\blankpage{%
     \null
@@ -14,6 +24,12 @@
 
 
 \begin{document}
+\newpage\null\thispagestyle{empty}
+
+\ThisCenterWallPaper{}{obalka.png}
+
+
+\newpage
 
 \include{title1.tex}
 \include{chap1.tex}
@@ -50,4 +66,6 @@
 \include{title3.tex}
 \include{chapter31.tex}
 \include{chapter32.tex}
+\include{factfict.tex}
+\include{lastword.tex}
 \end{document}
